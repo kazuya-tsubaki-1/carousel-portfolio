@@ -1,0 +1,120 @@
+body {
+    font-family: 
+        "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝",
+        "Helvetica Neue",
+        Arial,
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
+    margin: 0;
+}
+
+/* slick styles */
+.slick-list{
+    height: 100%;
+    box-shadow: 0 0 20px #ccc;
+}
+.slick-slide div:first-child{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slick-slide .slide-wrap div:first-child{
+    height: 10rem;
+}
+@media screen and (min-width: 600px) {
+    .slick-slide .slide-wrap div:first-child{
+        height: 24rem;
+    }
+}
+.slick-slide .slide-wrap{
+    width: 80%!important;
+    max-width: 800px;
+    height: auto!important;
+    display: block!important;
+    color: #fff;
+    outline: none;
+    cursor: grab;
+}
+.slick-slide .slide-wrap.top{
+    width: 90%!important;
+    max-width: 90%;
+    height: 100%!important;
+    position: relative;
+    padding: 52px 0 0;
+}
+.slick-dots{
+    background-color: #fff;
+    padding-bottom: 10px;
+    padding-top: 2px;
+    bottom: -40px;
+}
+.slick-dots li {
+    margin: 0;
+    width: 18px;
+}
+.slick-dots li button::before {
+    content: '■';
+    color: #24143c;
+}
+.slick-prev:before,
+.slick-next:before{
+    color: #000!important;
+}
+
+.slick-text {
+    height: 200px;
+    overflow: auto;
+    margin: 12px auto -12px;
+}
+.slick-text::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+.slick-text::-webkit-scrollbar-track {
+    background-color: rgb(245, 245, 245);
+    opacity: 0.1;
+}
+.slick-text::-webkit-scrollbar-thumb {
+    background-color: #247f8d;
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+}
+
+.slick-slide .slide-wrap.top .arrow{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    -webkit-animation: arrow_move 3.5s infinite;
+    animation: arrow_move 3.5s infinite;
+    animation-timing-function: ease-out;
+}
+@-webkit-keyframes arrow_move {
+0% {
+    -webkit-transform: rotate(-135deg) translate(0, 0);
+}
+10% {
+    -webkit-transform: rotate(-135deg) translate(-10px, 10px);
+}
+20% {
+    -webkit-transform: rotate(-135deg) translate(0, 0);
+}
+}
+@keyframes arrow_move {
+0% {
+    transform: rotate(-135deg) translate(0, 0);
+}
+10% {
+    transform: rotate(-135deg) translate(-10px, 10px);
+}
+20% {
+    transform: rotate(-135deg) translate(0, 0);
+}
+}
