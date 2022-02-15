@@ -2,7 +2,7 @@
 A simple portfolio creation library using Next(SSG)+Carousel.
 
 # Demo
-http://camellia.shigoto.bz/
+http://camellia1.html.xdomain.jp/
 
 # Features
 - Create a portfolio site by simply changing the JSON content and images.
@@ -28,25 +28,25 @@ yarn build
 ```
 
 ### settings
-- site settings
+- site settings  
 Please edit the comment part in the code.
 ```
 src/pages/_app.tsx
 ```
 
-- page settings
+- page settings  
 Please edit the comment part in the code.
 ```
 src/pages/index.tsx
 ```
 
-- vanta settings
+- vanta settings  
 Please edit the comment part in the code.
 ```
 src/components/vanta.tsx
 ```
 
-- img settings
+- img settings  
 Please store the image in the following folder.
 ```
 public/images
@@ -64,7 +64,7 @@ public/images
 - yarn
 
 # Author
-Kazuya Tsubaki
+Kazuya Tsubaki  
 tsu0baki@gmail.com
  
 # License
